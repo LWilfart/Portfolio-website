@@ -649,6 +649,18 @@ header{
     }
     }
 
+   @media screen and (max-width: 375px) {
+    .bar .progrees-line.linux span::after {
+      transform: translateX(30%) 
+    }
+    .bar .progrees-line.power span::after {
+      transform: translateX(190%) 
+    }
+    .bar .progrees-line.sql span::after {
+      transform: translateX(5%) 
+    }
+}
+
 /* ***************** */
 /* PORTFOLIO SECTION */
 /* ***************** */
