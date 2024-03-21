@@ -120,9 +120,20 @@ header{
     scale: 0.95;
 }
 
+
+/* NAVBAR CONFIGURATION RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
+  .navbar-section {
+      background-attachment: scroll; /* Définir le fond en défilement normal */
+      overflow: hidden;
+  }
+}
+
 /* ***************** */
 /* DROPDOWN MENU configuration*/
 /* ***************** */
+
 .dropdown_menu{
     display: none;
     position: fixed;
