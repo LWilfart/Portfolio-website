@@ -694,7 +694,7 @@ header{
 .slider .list .item .content{
     position: absolute;
     top: 33%;
-    max-width: 80%;
+    max-width: 100%;
     left: 50%;
     transform: translateX(-50%);
     padding-right: 30%;
