@@ -1246,9 +1246,9 @@ header{
 /* ***************** */
 /* tEST SMALL SCREEN */
 /* ***************** */
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 375px) {
     body {
-        max-width: 390px;
+        max-width: 375px;
         margin: 0 auto; /* Pour centrer le contenu si nécessaire */
     }
 }
