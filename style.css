@@ -1244,7 +1244,7 @@ header{
   background: linear-gradient(transparent,#be19ff);
 }
 /* ***************** */
-/* tEST SMALL SCREEN */
+/* TEST SMALL SCREEN */
 /* ***************** */
 @media only screen and (max-width: 375px) {
     body {
@@ -1252,6 +1252,30 @@ header{
         margin: 0 auto; /* Pour centrer le contenu si nécessaire */
     }
 }
+
+@media only screen and (max-width: 412px) {
+    body {
+        max-width: 412px;
+        margin: 0 auto; /* Pour centrer le contenu si nécessaire */
+    }
+}
+
+
+@media only screen and (max-width: 390px) {
+    body {
+        max-width: 390px;
+        margin: 0 auto; /* Pour centrer le contenu si nécessaire */
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    body {
+        max-width: 360px;
+        margin: 0 auto; /* Pour centrer le contenu si nécessaire */
+    }
+}
+
 
 
 
