@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>starting</title>
+        <link rel="stylesheet" href="style.css">  <!-- lié le fichier css --> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- ???? --> 
+    </head>
+    <body>
+            
+            <!-- ******************************** -->
+                    <!-- NavBar Section -->
+            <!-- ******************************** -->
+      
+        <section class="navbar-section">
+                <header>                                          <!-- cette section comprenant logo et le reste --> 
+
+                    <div class="navbar">
+                        <div class="logo">
+                            <b href="#"><img src="assets/logo.png"></b>
+                        </div>
+                        <ul class="links">
+                            <li class="about" onclick="scrollToSection('about')"><b href="about"></b>About</li>
+                            <li class="skills" onclick="scrollToSection('skills')"><b href="skills"></b>Skills</li>
+                            <li class="portfolio" onclick="scrollToSection('portfolio')"><b href="portfolio"></b>Portfolio</li>
+                        </ul>
+                        <b href="#" class="action_btn" onclick="scrollToSection('contact')" >Contact</b>
+                        <div class="toggle_btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+
+                    <div class="dropdown_menu"> <!-- définir le bloc de menu --> 
+                  <!--      <li onclick="scrollToSection('home')"><b href="#home" ></b>Home</li> --> 
+                        <li onclick="scrollToSection('about')"><b href="#about"></b>About</li>
+                        <li onclick="scrollToSection('skills')"><b href="Skills"></b>Skills</li>
+                        <li onclick="scrollToSection('portfolio')"><b href="portfolio"></b>Portfolio</li>
+                        <li onclick="scrollToSection('contact')"><b class="action_btn" >Contact</b></li>
+                    </div>
+
+                </header>
+              <img
+                class="parallax__foreground-front"
+                src="assets/foreground-front.webp"
+                alt=""
+              />
+            <div class="parallax">
+                <div class="wrapper">
+                    <div class="content">   <!-- definit la classe contente comprenant info, more info et icon media --> 
+                        <div class="info"> <!-- Definit de la classe info--> 
+                            <h2> Hi ! <br> I'm Lydiane, Your <br><span class="auto-type"></span> </h2>
+                        </div> <!-- fin de la sous classe content/info --> 
+                    </div>
+                </div>
+
+                <img class="parallax__dydi" src="assets/dydi.png" alt="" />
+                <!-- Les scripts JS --> 
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const toggleBtn = document.querySelector('.toggle_btn');
+                        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+                        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+                        toggleBtn.onclick = function () {
+                            dropDownMenu.classList.toggle('open');
+                            const isOpen = dropDownMenu.classList.contains('open')
+
+                            toggleBtnIcon.classList = isOpen
+                            ? 'fa-solid fa-xmark'
+                            : 'fa-solid fa-bars'
+                        }
+                    });
+                </script>
+
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings: ["Bio-informatician","Python Dev","Data analyst","IT enthusiast"],
+                        typeSpeed: 80,
+                        backSpeed: 80,
+                        loop: true
+                    })
+                </script>
+
+                <script>
+                  function scrollToSection(sectionId) {
+                      const section = document.getElementById(sectionId);
+                      section.scrollIntoView({ behavior: 'smooth' });
+                  }                 
+                </script>
+
+            </section> 
+
+            <!-- ******************************** -->
+                    <!-- About Section -->
+            <!-- ******************************** -->
+        
+            <section class="about-section" id="about">
+                <div class="main">
+                    <div class="main__container">
+                    <div class="main__img--container">
+                        <div class="main__img--card"><img src="assets/profil_job.png" alt=""></div>
+                    </div>
+                    <div class="main__content">
+                        <h1>But who am I?</h1>
+                        <h2>FUN KIND PASSIONATE</h2>
+                        <p>From childhood, I've been hooked on IT and biology. Starting with website coding, I ventured into a biology degree but found my true passion in bioinformatics and data analysis. Along the way, I learned Python, R, HTML, CSS, and SQL. </p>
+                    </div>
+                    </div>
+            </section>
+
+
+
+            <!-- ******************************** -->
+                    <!-- Skill Section -->
+            <!-- ******************************** -->
+
+            <section class="skills-section" id="skills">
+                <div class="skill-title">
+                    <h1>SKILLS</h1>
+                </div>
+                <div class="skill-bar">
+                    <div class="bar">
+                        <div class="info">
+                          <span>Microsoft office</span>
+                        </div>
+                        <div class="progrees-line microsoft">
+                          <span></span>
+                        </div>
+                      </div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>html</span>
+                      </div>
+                      <div class="progrees-line html">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>css</span>
+                      </div>
+                      <div class="progrees-line css">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>SQL</span>
+                      </div>
+                      <div class="progrees-line sql">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                          <span>Python</span>
+                        </div>
+                        <div class="progrees-line python">
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div class="bar">
+                        <div class="info">
+                          <span>Linux system</span>
+                        </div>
+                        <div class="progrees-line linux">
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div class="bar">
+                        <div class="info">
+                          <span>Bash</span>
+                        </div>
+                        <div class="progrees-line bash">
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div class="bar">
+                        <div class="info">
+                          <span>R</span>
+                        </div>
+                        <div class="progrees-line r">
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div class="bar">
+                        <div class="info">
+                          <span>Power Bi</span>
+                        </div>
+                        <div class="progrees-line power">
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div class="bar">
+                        <div class="info">
+                          <span>Machine learning</span>
+                        </div>
+                        <div class="progrees-line machine">
+                          <span></span>
+                        </div>
+                      </div>
+
+                  </div>
+
+            </section>
+        </div>
+            <!-- ******************************** -->
+                    <!-- Portfolio Section -->
+            <!-- ******************************** -->
+            <section class="portfolio" id="portfolio">
+                <div class="slider">
+                    
+                    <div class="list">
+                        <div class="item">
+                            <img src="./assets/obsidian.webp" alt="">
+                            <div class="content">
+                                <div class="title">Obsidian</div>
+                                <div class="type">Snippets</div>
+                                <div class="description">Here are some css snippets regarding obsidian software everything is not from me only</div>
+                                <div class="button">
+                                    <button onclick="redirectTo('https://github.com/LWilfart/Some_Obsidian_snippets')" >SEE MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/biogastool.webp" alt="">
+                            <div class="content">
+                                <div class="title">MetaBin</div>
+                                <div class="type">binning</div>
+                                <div class="description">This project in python is part of my bachelor thesis regarding biogas formation</div>
+                                <div class="button">
+                                    <button onclick="redirectTo('https://github.com/LWilfart/MetaBin')">SEE MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/bioquest.webp" alt="">
+                            <div class="content">
+                                <div class="title">Bioquest</div>
+                                <div class="type">Video game</div>
+                                <div class="description">I will soon post my beginning. Its a game about biology and bioinformatics.</div>
+                                <div class="button">
+                                    <button onclick="redirectTo('https://github.com/LWilfart/BioQuest')">SEE MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 
+                        <div class="item">
+                            <img src="./assets/img4.jpg" alt="">
+                            <div class="content">
+                                <div class="title">PROJECT 4</div>
+                                <div class="type">BLU</div>
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu vulputate tellus, consequat</div>
+                                <div class="button">
+                                    <button>SEE MORE</button>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+
+
+
+                    <div class="thumbnail">
+                        <div class="item">
+                            <img src="./assets/obsidian.webp" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./assets/biogastool.webp" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./assets/bioquest.webp" alt="">
+                        </div>
+                        <!-- 
+                        <div class="item">
+                            <img src="./assets/img4.jpg" alt="">
+                        </div>
+                        -->
+                    </div>
+
+                    <div class="nextPrevArrows">
+                        <button class="prev"> <p><</p> </button>
+                        <button class="next"> > </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Script JS for Portfolio Section -->
+                    
+            <script>
+              function redirectTo(url) {
+                window.location.href = url;
+              }
+            </script>
+
+            <script src="app.js"></script>
+
+            <!-- ******************************** -->
+                    <!-- contact Section -->
+            <!-- ******************************** -->
+            <section class="contact" id="contact">
+                <div class="contact-container">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        <div class="contact-left-title">
+                            <h2>Get in touch</h2>
+                        </div>
+                        <input type="hidden" name="access_key" value="8e97a3f6-3a78-4bfc-9124-c808113274e0">
+                        <input type="text" name="name" placeholder="Your name" class="contact-inputs" required></input>
+                        <input type="email" name="email" placeholder="Your email" class="contact-inputs" required></input>
+                        <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit<img src="assets/arrow_icon.png" alt=""></button>
+                    </form>
+                    <div class="contact-right">
+                      <img src="assets/right_img.png"> 
+                    </div>
+
+                </div>
+                <div class="media-icons"> <!-- creation de section des content/icones de média--> 
+                  
+                    <b href="https://www.linkedin.com/in/lydiane-wilfart/"><i class="fa-brands fa-linkedin"></i></b>
+                    <b href="https://github.com/LWilfart"><i class="fa-brands fa-github"></i></b>
+                </div>
+            </section>
+            <section class="by">
+            <div class="made">@ made by myself with html, css and js</div>
+            </section>
+    </body>
+</html>
