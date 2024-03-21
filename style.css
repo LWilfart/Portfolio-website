@@ -181,6 +181,12 @@ header{
     }
 }
 
+@media(max-width:768px){ 
+  .navbar .toggle_btn{
+    right: 100px;
+  }
+  }
+
 @media(max-width: 576px){
     .dropdown_menu {
         left: 2rem;
@@ -190,7 +196,7 @@ header{
 
 @media(max-width:390px){ 
   .navbar .toggle_btn{
-    right: 20px;
+    right: -110px;
   }
   }
 
@@ -1145,10 +1151,10 @@ header{
   .parallax__foreground-front{
     position: relative;
     top:390px;
-    left: -40px;
+    left: 0px;
     z-index: 3;
     height: 45%;
-    width: 110%;
+    width: 100%;
   }
 
   @media screen and (max-width: 1190px) {
