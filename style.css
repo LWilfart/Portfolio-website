@@ -1243,3 +1243,15 @@ header{
 ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(transparent,#be19ff);
 }
+/* ***************** */
+/* tEST SMALL SCREEN */
+/* ***************** */
+@media only screen and (max-width: 390px) {
+    body {
+        max-width: 390px;
+        margin: 0 auto; /* Pour centrer le contenu si nécessaire */
+    }
+}
+
+
+
