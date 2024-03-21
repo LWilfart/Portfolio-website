@@ -972,6 +972,18 @@ header{
     }
 }
 
+
+@media screen and (max-width: 375px) {
+  .slider .list .item .content{
+    top: 200px;
+    left: 110px;
+    scale:80%;
+  }
+  .nextPrevArrows{
+    scale: 80%;
+  }
+}
+
 /* ***************** */
 /* CONTACT SECTION */
 /* ***************** */
