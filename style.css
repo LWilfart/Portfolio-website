@@ -1144,13 +1144,13 @@ header{
 }
 
 @media screen and (max-width: 390px) {
-  .media-icons b{
+  .media-icons a{
     padding-right: 40px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .media-icons b{
+  .media-icons a{
     padding-top: 80px;
   }
 }
