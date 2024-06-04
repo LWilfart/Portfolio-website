@@ -1121,7 +1121,7 @@ header{
     transition-property: transform; /* définit que cette transition concerne le transform de media icon hover */
 }
 
-.media-icons b{
+.media-icons a{
     position: relative;
     margin-top: -30px;
     margin-bottom: 30px;
@@ -1129,11 +1129,11 @@ header{
     font-size: 30px;
 }
 
-.media-icons b:not(:last-child){ /* espace entre les media icons */
+.media-icons a:not(:last-child){ /* espace entre les media icons */
     margin-right: 60px;
 }
 
-.media-icons b:hover{
+.media-icons a:hover{
     transform: scale(1.5);
     cursor: pointer;
 }
