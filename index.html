@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=375, initial-scale=1.0">
         <title>Wilfart Lydiane</title>
-        <link rel="stylesheet" href="style.css">  <!-- lié le fichier css --> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- ???? --> 
+        <link rel="stylesheet" href="style.css">  <!-- link to the css file--> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Link to the Font Awesome for icons --> 
     </head>
     <body>
             
@@ -14,25 +14,24 @@
             <!-- ******************************** -->
       
         <section class="navbar-section">
-                <header>                                          <!-- cette section comprenant logo et le reste --> 
+                <header> <!-- this section includes the logos and the rest of the navbar --> 
 
                     <div class="navbar">
                         <div class="logo">
-                            <b href="#"><img src="assets/logo.png"></b>
+                            <b href="#"><img src="assets/logo.png"></b> <!-- Logo image-->
                         </div>
                         <ul class="links">
-                            <li class="about" onclick="scrollToSection('about')"><b href="about"></b>About</li>
-                            <li class="skills" onclick="scrollToSection('skills')"><b href="skills"></b>Skills</li>
-                            <li class="portfolio" onclick="scrollToSection('portfolio')"><b href="portfolio"></b>Portfolio</li>
+                            <li class="about" onclick="scrollToSection('about')"><b href="about"></b>About</li> <!-- About link -->
+                            <li class="skills" onclick="scrollToSection('skills')"><b href="skills"></b>Skills</li> <!-- Skills link -->
+                            <li class="portfolio" onclick="scrollToSection('portfolio')"><b href="portfolio"></b>Portfolio</li> <!-- Portfolio link -->
                         </ul>
-                        <b href="#" class="action_btn" onclick="scrollToSection('contact')" >Contact</b>
-                        <div class="toggle_btn">
+                        <b href="#" class="action_btn" onclick="scrollToSection('contact')" >Contact</b> <!-- Contact button -->
+                        <div class="toggle_btn"> <!-- toggle button for mobile menu -->
                             <i class="fa-solid fa-bars"></i>
                         </div>
                     </div>
 
-                    <div class="dropdown_menu"> <!-- définir le bloc de menu --> 
-                  <!--      <li onclick="scrollToSection('home')"><b href="#home" ></b>Home</li> --> 
+                    <div class="dropdown_menu"> <!-- Dropdown menu for mobile view -->
                         <li onclick="scrollToSection('about')"><b href="#about"></b>About</li>
                         <li onclick="scrollToSection('skills')"><b href="Skills"></b>Skills</li>
                         <li onclick="scrollToSection('portfolio')"><b href="portfolio"></b>Portfolio</li>
@@ -42,20 +41,21 @@
                 </header>
               <img
                 class="parallax__foreground-front"
-                src="assets/foreground-front.webp"
+                src="assets/foreground-front.webp" <!-- Foreground image -->
                 alt=""
               />
             <div class="parallax">
                 <div class="wrapper">
-                    <div class="content">   <!-- definit la classe contente comprenant info, more info et icon media --> 
-                        <div class="info"> <!-- Definit de la classe info--> 
+                    <div class="content">   <!-- content class including info,media icons,... --> 
+                        <div class="info"> <!-- Info class div --> 
                             <h2> Hi ! <br> I'm Lydiane, Your <br><span class="auto-type"></span> </h2>
-                        </div> <!-- fin de la sous classe content/info --> 
+                        </div>
                     </div>
                 </div>
 
-                <img class="parallax__dydi" src="assets/dydi.png" alt="" />
-                <!-- Les scripts JS --> 
+                <img class="parallax__dydi" src="assets/dydi.png" alt="" /> <!-- Img for parallax effect -->
+                
+                <!-- JS scripts for the toggle button functionality --> 
 
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
@@ -73,7 +73,7 @@
                         }
                     });
                 </script>
-
+				<!-- JS script for the typing effect -->
                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
                 <script>
@@ -84,7 +84,7 @@
                         loop: true
                     })
                 </script>
-
+				<!-- JS script for smooth scrolling to sections -->
                 <script>
                   function scrollToSection(sectionId) {
                       const section = document.getElementById(sectionId);
@@ -102,7 +102,7 @@
                 <div class="main">
                     <div class="main__container">
                     <div class="main__img--container">
-                        <div class="main__img--card"><img src="assets/profil_job.png" alt=""></div>
+                        <div class="main__img--card"><img src="assets/profil_job.png" alt=""></div> <!-- Profile image -->
                     </div>
                     <div class="main__content">
                         <h1>But who am I?</h1>
@@ -123,7 +123,7 @@
                     <h1>SKILLS</h1>
                 </div>
                 <div class="skill-bar">
-                    <div class="bar">
+                    <div class="bar"> <!-- Skill bar for MS office -->
                         <div class="info">
                           <span>Microsoft office</span>
                         </div>
@@ -131,7 +131,7 @@
                           <span></span>
                         </div>
                       </div>
-                    <div class="bar">
+                    <div class="bar"> <!-- Skill bar for HTML -->
                       <div class="info">
                         <span>html</span>
                       </div>
@@ -139,7 +139,7 @@
                         <span></span>
                       </div>
                     </div>
-                    <div class="bar">
+                    <div class="bar"> <!-- Skill bar for css-->
                       <div class="info">
                         <span>css</span>
                       </div>
@@ -147,7 +147,7 @@
                         <span></span>
                       </div>
                     </div>
-                    <div class="bar">
+                    <div class="bar"> <!-- Skill bar for sql -->
                       <div class="info">
                         <span>SQL</span>
                       </div>
@@ -155,7 +155,7 @@
                         <span></span>
                       </div>
                     </div>
-                    <div class="bar">
+                    <div class="bar"> <!-- Skill bar for python -->
                         <div class="info">
                           <span>Python</span>
                         </div>
@@ -164,7 +164,7 @@
                         </div>
                       </div>
 
-                      <div class="bar">
+                      <div class="bar"> <!-- Skill bar for python -->
                         <div class="info">
                           <span>Linux system</span>
                         </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
 
-                      <div class="bar">
+                      <div class="bar"> <!-- Skill bar for bash -->
                         <div class="info">
                           <span>Bash</span>
                         </div>
@@ -182,7 +182,7 @@
                         </div>
                       </div>
 
-                      <div class="bar">
+                      <div class="bar"> <!-- Skill bar for R -->
                         <div class="info">
                           <span>R</span>
                         </div>
@@ -191,7 +191,7 @@
                         </div>
                       </div>
 
-                      <div class="bar">
+                      <div class="bar"> <!-- Skill bar for Power Bi -->
                         <div class="info">
                           <span>Power Bi</span>
                         </div>
@@ -200,7 +200,7 @@
                         </div>
                       </div>
 
-                      <div class="bar">
+                      <div class="bar"> <!-- Skill bar for machine learning -->
                         <div class="info">
                           <span>Machine learning</span>
                         </div>
@@ -216,6 +216,7 @@
             <!-- ******************************** -->
                     <!-- Portfolio Section -->
             <!-- ******************************** -->
+            
             <section class="portfolio" id="portfolio">
                 <div class="slider">
                     
