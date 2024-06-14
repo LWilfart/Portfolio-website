@@ -597,7 +597,7 @@ header{
     content: "basics";
   }
   .bar .progrees-line.power span::after {
-    content: "Newbie";
+    content: "Intermediate";
      /*transform: translateX(180%)   deplacer le bloc mauve et le texte sans faire de la giga merde */
   }
   .bar .progrees-line.machine span::after {
