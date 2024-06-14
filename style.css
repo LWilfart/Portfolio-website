@@ -534,7 +534,7 @@ header{
     width: 20%;
   }
   .bar .progrees-line.power span {
-    width: 10%;
+    width: 50%;
   }
   .bar .progrees-line.machine span {
     width: 10%;
@@ -598,7 +598,7 @@ header{
   }
   .bar .progrees-line.power span::after {
     content: "Newbie";
-    transform: translateX(180%)   /* deplacer le bloc mauve et le texte sans faire de la giga merde */
+     /*transform: translateX(180%)   deplacer le bloc mauve et le texte sans faire de la giga merde */
   }
   .bar .progrees-line.machine span::after {
     content: "Newbie";
