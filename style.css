@@ -537,7 +537,7 @@ header{
     width: 50%;
   }
   .bar .progrees-line.machine span {
-    width: 10%;
+    width: 50%;
   }
   
   .bar .progrees-line span::before {
@@ -601,9 +601,9 @@ header{
      /*transform: translateX(180%)   deplacer le bloc mauve et le texte sans faire de la giga merde */
   }
   .bar .progrees-line.machine span::after {
-    content: "Newbie";
-    align-content: left;
-    transform: translateX(300%)
+    content: "Intermediate";
+    /*align-content: left;
+    transform: translateX(300%)*/
   }
   
   @keyframes showText {
