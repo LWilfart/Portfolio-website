@@ -630,7 +630,6 @@ header{
         margin-top: -376px;
     }
     .bar .progrees-line.machine span::after {
-      content: "Newbie";
       align-content: left;
       transform: translateX(310%)
     }
